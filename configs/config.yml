@@ -1,0 +1,17 @@
+paths:
+  data_dir: data
+  figures_dir: reports/figures
+  prices_csv: data/brent_prices.csv
+  events_csv: data/events.csv
+
+parse:
+  date_format: "%d-%b-%y"   # e.g., 20-May-87
+  dayfirst: true            # fallback if date_format is unset
+  index_col: "Date"
+  price_col: "Price"
+
+plot:
+  figsize: [12, 6]
+  dpi: 110
+  style: default
+  date_fmt: "%Y-%m-%d"
