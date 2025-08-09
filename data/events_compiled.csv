@@ -1,0 +1,21 @@
+event,start_date,type,region,source_url,notes
+Iraq invades Kuwait (Gulf War begins),1990-08-02,geopolitical,Middle East,https://www.britannica.com/event/Persian-Gulf-War,Iraq's invasion of Kuwait triggers international sanctions and sets stage for Desert Storm.
+Operation Desert Storm air campaign begins,1991-01-17,geopolitical,Middle East,https://www.britannica.com/event/Persian-Gulf-War,Coalition air strikes to expel Iraqi forces from Kuwait.
+Asian Financial Crisis begins (Thai baht devaluation),1997-07-02,economic,Asia,https://www.federalreservehistory.org/essays/asian-financial-crisis,Regional demand shock; contagion across East Asia.
+Russian financial crisis and default,1998-08-17,economic,Russia,https://www.bis.org/cgfs/Gonzalez-Hermosillo-et-al.pdf,Devaluation and default; global risk-off episode.
+September 11 attacks (9/11),2001-09-11,geopolitical,United States,https://www.britannica.com/event/September-11-attacks,Terror attacks; global demand shock/flight to safety.
+U.S.-led invasion of Iraq,2003-03-20,geopolitical,Middle East,https://www.britannica.com/event/Iraq-War,Major supply risk in a key producer.
+Hurricane Katrina landfall; Gulf energy disruption,2005-08-29,weather/infrastructure,U.S. Gulf of Mexico,https://www.everycrsreport.com/reports/RL33124.html,Large shut-ins of GOM production and refining.
+BP Prudhoe Bay partial shutdown (pipeline corrosion),2006-08-06,infrastructure,U.S. Alaska,https://www.everycrsreport.com/reports/RL33629.html,Partial field shutdown due to severe corrosion.
+Libyan Civil War unrest and supply disruption,2011-02-15,geopolitical,North Africa,https://www.britannica.com/event/Libya-Revolt-of-2011,Output collapse; EIA estimated 60–90% drop in early March 2011.
+OPEC opts not to cut production,2014-11-27,OPEC policy,Vienna,https://www.reuters.com/article/business/saudis-block-opec-output-cut-sending-oil-price-plunging-idUSKCN0JA0O2/,Decision accelerates 2014–2016 oil price slump.
+U.S. lifts 40-year crude export ban,2015-12-18,policy,United States,https://www.eia.gov/dnav/pet/pet_move_exp_dc_nus-z00_mbbl_m.htm,Legislation authorizes crude exports without license.
+JCPOA 'Implementation Day'—Iran oil sanctions lifted,2016-01-16,policy/sanctions,Iran/EU/US,https://ofac.treasury.gov/recent-actions/20160116,Nuclear-related sanctions lifted; Iranian exports recover.
+OPEC agrees production cut (reintroduces target ~32.5 mb/d),2016-11-30,OPEC policy,Vienna,https://www.ecb.europa.eu/pub/pdf/other/eb201608_focus01.en.pdf,OPEC cut ~1.2 mb/d; non-OPEC to add ~0.6 mb/d.
+Saudi Abqaiq–Khurais oil facility attack,2019-09-14,geopolitical/infrastructure,Saudi Arabia,https://en.wikipedia.org/wiki/Abqaiq%E2%80%93Khurais_attack,Largest sudden supply outage in history; brief 5% of global supply offline.
+Oil price crash amid COVID and OPEC+ breakdown,2020-03-09,market/policy,Global,https://www.reuters.com/article/business/wall-street-clobbered-as-crude-plummets-virus-crisis-deepens-idUSKBN20W1IE/,Biggest one-day fall since 1991 Gulf War.
+Record OPEC+ production cuts (~9.7 mb/d),2020-04-12,OPEC+ policy,Global,https://www.reuters.com/article/business/opec-russia-approve-biggest-ever-oil-cut-to-support-prices-amid-coronavirus-pan-idUSKCN21U0J5/,Historic coordinated cuts to stabilize market.
+EU embargo & G7 price cap on Russian seaborne crude take effect,2022-12-05,sanctions/policy,EU/Russia,https://www.reuters.com/business/energy/g7-price-cap-russian-oil-kicks-russia-will-only-sell-market-price-2022-12-05/,Embargo plus $60/bbl price cap framework.
+OPEC+ surprise output cuts (~1.16 mb/d),2023-04-02,OPEC+ policy,Global,https://www.reuters.com/business/energy/sarabia-other-opec-producers-announce-voluntary-oil-output-cuts-2023-04-02/,Announced voluntary cuts by several members.
+Israel–Hamas war begins,2023-10-07,geopolitical,Middle East,https://www.reuters.com/markets/commodities/what-impact-will-israelhamas-war-have-oil-2023-10-13/,Initial spike in Brent as risk premium rises.
+Red Sea shipping disruptions escalate (Houthi attacks),2023-12-18,logistics/geopolitical,Red Sea,https://www.reuters.com/world/middle-east/red-sea-attacks-force-rerouting-vessels-disrupting-supply-chains-2023-12-18/,Attacks force rerouting; freight and insurance costs surge.

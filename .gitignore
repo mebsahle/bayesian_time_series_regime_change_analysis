@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Virtual environments
+.venv/
+
+# IDEs
+.vscode/
+.idea/
+*.code-workspace
+
+# Jupyter
+.ipynb_checkpoints/
+
+# System files
+.DS_Store
+Thumbs.db
+*~
+
+# Data Science & ML
+*.pkl
+*.joblib
+*.h5
+*.trace
+tune_*.pkl
+arviz_data/
+
+# Logs and temporary files
+*.log
+temp/
+tmp/
+scratch/
+
+# Project-specific
+# Uncomment if you want to exclude large outputs
+# reports/figures/*.png
+# reports/figures/*.pdf
+# data/*.csv
+
+# Backup files
+*.bak
+*.backup

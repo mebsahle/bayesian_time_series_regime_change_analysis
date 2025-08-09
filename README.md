@@ -1,6 +1,12 @@
 # 📊 Bayesian Time-Series Regime-Change Analysis of Brent Crude Oil Prices
 
-A comprehensive repo to detect structural breaks in Brent crude oil prices using Bayesian change-point modeling and link them to key geopolitical/OPEC events.
+## Problem Statement
+Brent crude oil prices exhibit long stretches of “regimes” (e.g., stable uptrends, crashes, high-volatility plateaus) that are often linked to real-world shocks: OPEC/OPEC+ decisions, wars/sanctions, infrastructure outages, or global demand collapses. Traditional averages blur those structural breaks. We need a workflow that:
+- Treats **prices as a time series**, not independent points,
+- **Detects and interprets regime changes**, and
+- Grounds interpretation with a curated list of **historical events**.
+
+This repository implements that workflow in stages. **Task 1** focuses on high-quality data intake and exploratory analysis to prepare for Bayesian regime-change modeling (Task 2) and visualization (Task 3).
 
 ---
 
@@ -29,23 +35,56 @@ A comprehensive repo to detect structural breaks in Brent crude oil prices using
 ## 🗂️ Folder Structure
 
 ```
-
-bayesian\_time\_series\_regime\_change\_analysis/
+bayesian_time_series_regime_change_analysis/
 ├── README.md
+├── requirements.txt            # Python dependencies
+├── configs/
+│   └── config.yml             # Configuration parameters
 ├── data/
-│   ├── brent\_prices.csv       # Raw daily prices (Date, Price)
-│   └── events.csv             # Key events (event, start\_date)
-└── notebooks/
-└── 1\_time\_series\_EDA\_and\_Workflow\.ipynb
+│   ├── BrentOilPrices.csv     # Raw daily Brent crude oil prices
+│   ├── events_compiled.csv    # Compiled geopolitical/OPEC events
+│   └── reports/               # Data analysis outputs
+├── docs/
+│   └── WORKFLOW.md            # Detailed workflow documentation
+├── notebooks/
+│   └── 1_time_series_EDA_and_Workflow.ipynb
+└── reports/
+    └── figures/               # Generated plots and visualizations
+```
 
-````
+- **configs/**  
+  - `config.yml`: Project configuration and parameters  
 
 - **data/**  
-  - `brent_prices.csv`: Historical Brent prices  
-  - `events.csv`: 10–15 geopolitical/OPEC event dates  
+  - `BrentOilPrices.csv`: Historical Brent crude oil price data  
+  - `events_compiled.csv`: Curated list of key geopolitical/OPEC events with dates  
+  - `reports/`: Data processing outputs and intermediate results  
+
+- **docs/**  
+  - `WORKFLOW.md`: Comprehensive workflow and methodology documentation  
 
 - **notebooks/**  
-  - `1_time_series_EDA_and_Workflow.ipynb`: EDA, visualizations, events loading, and workflow documentation  
+  - `1_time_series_EDA_and_Workflow.ipynb`: Exploratory data analysis, visualizations, and workflow documentation  
+
+- **reports/**  
+  - `figures/`: Generated charts, plots, and statistical visualizations  
+
+---
+
+## 📋 Project Status
+
+### ✅ Completed
+- **Task 1 - EDA & Workflow**: 
+  - ✅ Data loading and cleaning pipeline
+  - ✅ Comprehensive exploratory data analysis
+  - ✅ Time series visualizations (price series, log returns, decomposition)
+  - ✅ Statistical analysis (ACF, PACF, rolling statistics)
+  - ✅ Event compilation and data integration
+  - ✅ Workflow documentation
+
+### 🚧 In Progress
+- **Task 2 - Bayesian Modeling**: Planned implementation of change-point detection
+- **Task 3 - Interactive Dashboard**: Planned development of web interface
 
 ---
 
@@ -60,15 +99,22 @@ bayesian\_time\_series\_regime\_change\_analysis/
 2. **🛠 Install dependencies**
 
    ```bash
-   pip install pandas numpy matplotlib
+   pip install -r requirements.txt
+   ```
+
+   Or install manually:
+   ```bash
+   pip install pandas numpy matplotlib statsmodels scipy pyyaml jupyterlab ipywidgets
    # PyMC3 & extras will be needed for Task 2
    pip install pymc3 arviz
    ```
 
-3. **📂 Prepare data**
+3. **📂 Data Setup**
 
-   * Place your Brent price CSV at `data/brent_prices.csv`
-   * Fill in `data/events.csv` with your chosen events
+   The project includes:
+   * `data/BrentOilPrices.csv`: Historical Brent crude oil price data
+   * `data/events_compiled.csv`: Curated geopolitical/OPEC events with dates
+   * `configs/config.yml`: Configuration parameters for analysis
 
 4. **▶️ Run Task 1 notebook**
 
@@ -76,10 +122,25 @@ bayesian\_time\_series\_regime\_change\_analysis/
    jupyter lab notebooks/1_time_series_EDA_and_Workflow.ipynb
    ```
 
+5. **📊 View Generated Outputs**
+
+   After running the notebook, you'll find:
+   - **Visualizations**: `reports/figures/` contains all generated plots
+   - **Statistical Analysis**: ACF/PACF plots, rolling statistics, STL decomposition
+   - **Event Analysis**: Price series with major events highlighted
+   - **Data Reports**: CSV files with top/bottom price movements
+
+6. **📖 Documentation**
+
+   - Review `docs/WORKFLOW.md` for detailed methodology
+   - Check `configs/config.yml` for analysis parameters
+
 5. **➡️ Next Steps**
 
-   * Proceed to **Task 2** (modeling)
-   * Then build the **Task 3** dashboard
+   * **Task 2**: Implement Bayesian change-point modeling with PyMC3
+   * **Task 3**: Build interactive dashboard (Flask + React)
+   * Review generated visualizations in `reports/figures/`
+   * Explore event correlations and statistical insights
 
 ---
 
