@@ -46,3 +46,8 @@ scratch/
 # Backup files
 *.bak
 *.backup
+
+# Large model outputs
+modeling/results/*.nc
+modeling/results/*.pkl
+modeling/results/*.trace
